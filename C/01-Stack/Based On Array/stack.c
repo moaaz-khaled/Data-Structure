@@ -39,6 +39,10 @@ void pop(stack *s)
 
 
 Type Top(stack s) {
+    if(isEmpty(s))
+    {
+        printf("Can't pop ! -> Stack is Empty!\n");
+    }
     return s.arr[s.top];
 }
 
@@ -58,8 +62,11 @@ Type clear_stack(stack *s)
 
 void print_stack(stack s) {
     for(int i = s.top ; i >= 0 ; i--)
-        printf("%d ",s.arr[i]);
+        printf("%d ",s.arr[i]); // ------> %d Because Data Type is int That is update Based on program 
+    printf("\n");
 }
+// Because This program With c language i can't use Template Such as C++
+// There is Exist another way To implement it With *void && union && size_of
 
 
 
