@@ -15,7 +15,7 @@ void push(stack *s , Type data)
 {
     if(s->top == MaxSize - 1)
     {
-        printf("Can't push more than 10 element : Stack is OverFlow!!!\n");
+        printf("Can't push more than 1e6 element : Stack is OverFlow!!!\n");
         return ;
     }
     else
@@ -52,7 +52,7 @@ int size_of_stack(stack s) {
 }
 
 
-Type clear_stack(stack *s)
+void clear_stack(stack *s)
 {
     free(s->arr);
     s->top = -1;
