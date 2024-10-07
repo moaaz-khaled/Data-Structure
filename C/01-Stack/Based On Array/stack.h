@@ -14,7 +14,7 @@ short isEmpty(stack s);
 void push(stack *s , Type data);
 void pop(stack *s);
 Type Top(stack s);
-Type clear_stack(stack *s);
+void clear_stack(stack *s);
 int size_of_stack(stack s);
 void copy_stack(stack s , stack *s2);
 void print_stack(stack s);
