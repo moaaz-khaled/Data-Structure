@@ -13,7 +13,7 @@ void createStack(stack *s);
 short isEmpty(stack s);
 void push(stack *s , Type data);
 void pop(stack *s);
-Type Top(stack s);
+Type peek(stack s);
 void clear_stack(stack *s);
 int size_of_stack(stack s);
 void copy_stack(stack s , stack *s2);
