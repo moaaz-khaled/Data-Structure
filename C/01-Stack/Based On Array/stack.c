@@ -26,7 +26,7 @@ void push(stack *s , Type data)
 }
 
 
-void pop(stack *s)
+void peek(stack *s)
 {
     if(isEmpty(*s))
     {
