@@ -101,3 +101,25 @@ void clear(List *L)
         retrieve(L , 0);
     }
 }
+
+void push_back(List *L , Type data)
+{
+    insert(L , data , L->size);
+}
+
+void push_front(List *L , Type data)
+{
+    insert(L , data , 0);
+}
+
+Type pop_back(List *L)
+{
+    Type info = retrieve(L , L->size-1);
+    return info;
+}
+
+Type pop_front(List *L)
+{
+    Type info = retrieve(L , 0);
+    return info;
+}
